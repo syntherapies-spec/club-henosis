@@ -2,6 +2,7 @@
 <html lang="fr" data-theme="dark" style="color-scheme: dark;"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" id="meta-robots" content="noindex, nofollow">
 <title>Les soirées Hénōsis — Jeudi 3 décembre 2026, Les Petits Caprices, Lyon</title>
 <meta name="description" content="Une soirée en cercle restreint aux Petits Caprices, à Lyon. Cocktail, amuse-bouches, rencontres choisies. Réservation en ligne.">
 <link rel="canonical" href="https://club-henosis.fr/">
@@ -25,7 +26,7 @@
 <script id="etat" type="application/json">{
   "version": 1,
   "modif": 1791137183824,
-  "mode": "atelier",
+  "mode": "site",
   "liens": {
     "billetterie": "",
     "contact": "contact@club-henosis.fr",
@@ -100,7 +101,8 @@
     },
     "lectureCentre": true,
     "decalagesTel": false,
-    "voletHauteurTel": 100
+    "voletHauteurTel": 100,
+    "noindex": true
   },
   "textes": {
     "ouverture": {
@@ -1125,6 +1127,7 @@ section{ max-width:var(--measure); padding-block:var(--space-2xl) var(--space-xl
       <div class="a-ligne"><label for="m-centre">Volet centré</label><input type="checkbox" id="m-centre" data-champ="miseEnPage.voletCentre"></div>
       <div class="a-ligne"><label for="m-anim">Entrée en fondu</label><input type="checkbox" id="m-anim" data-champ="miseEnPage.animations"></div>
       <div class="a-ligne"><label for="m-barre">Barre « Réserver » sur téléphone</label><input type="checkbox" id="m-barre" data-champ="miseEnPage.barreMobile"></div>
+      <div class="a-ligne"><label for="m-noindex">Page invisible des moteurs de recherche<small>Coché : Google et les autres ne référencent pas la page (balise noindex, dans le fichier mis en ligne aussi). Seuls ceux qui ont le lien ou le QR y accèdent.</small></label><input type="checkbox" id="m-noindex" data-champ="miseEnPage.noindex"></div>
       <div class="a-ligne"><label for="m-lecture">Colonne de lecture centrée sur ordinateur<small>Décoché : le texte reste calé contre le volet</small></label><input type="checkbox" id="m-lecture" data-champ="miseEnPage.lectureCentre"></div>
       <h3>Blocs : ordre, place et affichage</h3>
       <p>▲ ▼ changent l'ordre, ⇄ envoie le bloc dans l'autre zone (volet ou page), la case l'affiche ou le masque. Les mêmes commandes apparaissent sur chaque bloc dans l'aperçu.</p>
@@ -1339,6 +1342,7 @@ section{ max-width:var(--measure); padding-block:var(--space-2xl) var(--space-xl
     e.blocs.forEach(b => { if (!b.styleTel) b.styleTel = Object.assign({ x:0, y:0, apres:0, ecart:100, taille:100, interligne:100, alignement:'', police:'' }, b.style || {}, garder ? {} : { x:0, y:0 }); });
     if (!e.zonesTel || typeof e.zonesTel !== 'object' || Array.isArray(e.zonesTel)) { e.zonesTel = {}; Object.entries(e.zones || {}).forEach(([k, z]) => { e.zonesTel[k] = Object.assign({}, z, garder ? {} : { x:0, y:0 }); }); }
     if (e.miseEnPage.voletHauteurTel == null) e.miseEnPage.voletHauteurTel = 100;
+    if (e.miseEnPage.noindex == null) e.miseEnPage.noindex = true;
     if (e.logo && !e.logo.v3) { e.logo.v3 = true; const bm = e.blocs.find(b => b.id === 'marque'); if (bm && e.logo.libre) { bm.style.x = e.logo.x || 0; bm.style.y = e.logo.y || 0; } }
     (e.textes.signature.liens || []).forEach(l => { if (l.texte === 'Mentions légales' && (!l.url || l.url === '#')) l.url = '#mentions'; });
     if (!Array.isArray(e.blocs) || !e.blocs.length) {
@@ -1408,6 +1412,7 @@ section{ max-width:var(--measure); padding-block:var(--space-2xl) var(--space-xl
     $('#ouverture').classList.toggle('centre', !!m.voletCentre);
     $('#barre').classList.toggle('cache', m.barreMobile === false);
     site.classList.toggle('lecture-centree', m.lectureCentre !== false);
+    const mr = $('#meta-robots'); if (mr) mr.setAttribute('content', m.noindex === false ? 'index, follow' : 'noindex, nofollow');
     $$('[data-href="billetterie"]', site).forEach(a => a.classList.toggle('plein', !!c.boutonPlein));
     document.body.style.background = c.fond;
   }
@@ -2125,7 +2130,7 @@ section{ max-width:var(--measure); padding-block:var(--space-2xl) var(--space-xl
   /* ---------- Téléchargement / publication ---------- */
   let downloads = null, artifactCap = null, peutOuvrir = false;
   async function telecharger(mode){
-    const html = fabriquerHTML(mode), nom = nomFichier(mode);
+    let html = fabriquerHTML(mode); html = html.replace(/<meta name="robots" id="meta-robots" content="[^"]*">/, '<meta name="robots" id="meta-robots" content="' + (etat.miseEnPage.noindex === false ? 'index, follow' : 'noindex, nofollow') + '">'); const nom = nomFichier(mode);
     if (downloads) {
       try { await downloads.save({ filename: nom, data: html }); message('#pa-msg-fichier', 'Fichier proposé : ' + nom, 'ok'); garderVersion('téléchargement ' + (mode === 'site' ? 'site' : 'atelier')); }
       catch (e) { message('#pa-msg-fichier', e && e.code === 'declined' ? 'Téléchargement annulé.' : 'Téléchargement impossible ici (' + (e && e.code || 'erreur') + ').', 'erreur'); }
