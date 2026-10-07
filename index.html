@@ -25,8 +25,8 @@
 <!-- ÉTAT DE LA PAGE : textes, couleurs, polices, logo, mise en page. Modifié par l'atelier ; peut aussi s'éditer à la main. -->
 <script id="etat" type="application/json">{
   "version": 1,
-  "modif": 1791137183824,
-  "mode": "site",
+  "modif": 1791350461030,
+  "mode": "atelier",
   "liens": {
     "billetterie": "",
     "contact": "contact@club-henosis.fr",
@@ -117,9 +117,9 @@
     "lettre": {
       "salutation": "Chers amis,",
       "paragraphes": [
-        "Le jeudi 3 décembre, l'établissement Les Petits Caprices ouvre ses portes à un cercle restreint. \nHénōsis — du grec ancien ἕνωσις, l'union — porte bien son nom : une soirée pour réunir, autour d'un cocktail et de quelques amuse-bouches, des personnes qui ont mieux à faire que de distribuer des cartes de visite.",
-        "Vous y trouverez des invités choisis un à un, une carte de cocktails composée pour l'occasion, et le temps de parler. Les affinités professionnelles naissent de la conversation ; c'est elle que nous cultivons.",
-        "Chaque réservation en ligne est nominative. Les places sont confirmées dans l'ordre des réponses, dans la limite des disponibilités."
+        "\nLe jeudi 3 décembre 2026, l'établissement Les Petits Caprices ouvre ses portes à un cercle restreint.\n\nSi vous lisez ce message, c'est que vous faites partie des personnes que nous avons soigneusement choisies pour intégrer ce cercle. \n\nEn cette occasion unique et spéciale, vous êtes conviés à profiter d'une soirée cocktail.",
+        "Au sein de cette soirée, vous y trouverez un programme conçu sur-mesure. Cela, dans l'objectif de créer des affinités professionnelles et amicales.\n\nChaque réservation en ligne est nominative et les places sont limitées.\n\nA cet effet, nous vous encourageons à prendre vos places maintenant pour garantir votre participation.",
+        "D'ici notre rencontre du jeudi 3 décembre, portez-vous bien.\n\nLe meilleur reste à venir.\n\nAvec notre affection la plus sinère,\nL'équipe Hénōsis."
       ]
     },
     "fiche": {
@@ -218,7 +218,7 @@
       "titre": "Mentions légales",
       "editeur": "Hénōsis — [forme juridique, ex. SAS], au capital de [montant] €, [n° SIREN], siège : [adresse], Lyon.",
       "directeur": "[Prénom Nom]",
-      "contact": "contact@henosis.fr",
+      "contact": "contact@club-henosis.fr",
       "hebergeur": "GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis (GitHub Pages).",
       "donnees": "Les réservations sont traitées par Billetweb (Trustweb SAS). Les informations demandées lors de la réservation servent uniquement à l'organisation de la soirée et ne sont ni cédées ni revendues. Conformément au RGPD, vous pouvez demander l'accès, la rectification ou l'effacement de vos données à l'adresse de contact ci-dessus. Ce site ne dépose aucun cookie.",
       "propriete": "Le nom Hénōsis, le logo et les contenus de cette page sont la propriété de l'éditeur. Toute reproduction sans accord est interdite.",
@@ -227,10 +227,10 @@
   },
   "agenda": {
     "evenement": "Soirée Hénōsis",
-    "debut": "2026-12-03T19:30",
+    "debut": "2026-12-03T19:00",
     "fin": "2026-12-03T23:00",
     "lieu": "Les Petits Caprices, Lyon",
-    "details": "Une soirée en cercle restreint, cocktail et amuse-bouches. Tenue professionnelle décontractée.",
+    "details": "Soirée Cocktail Hénosis. Tenue professionnelle décontractée.",
     "outlook": "pro"
   },
   "blocs": [
@@ -346,7 +346,7 @@
         "alignement": "",
         "police": "",
         "apres": 0,
-        "ecart": 165
+        "ecart": 0
       },
       "styleTel": {
         "x": 0,
@@ -465,19 +465,19 @@
       "visible": true,
       "style": {
         "x": 0,
-        "y": 78,
+        "y": 0,
         "taille": 75,
         "interligne": 80,
         "alignement": "",
         "police": "",
-        "apres": -80,
-        "ecart": 0
+        "apres": 0,
+        "ecart": 100
       },
       "styleTel": {
         "x": 0,
         "y": 0,
         "apres": 0,
-        "ecart": 300,
+        "ecart": 100,
         "taille": 85,
         "interligne": 95,
         "alignement": "",
@@ -572,33 +572,9 @@
       "alignement": "",
       "interligne": 100
     },
-    "textes.signature.ps": {
-      "x": 0,
-      "y": -59,
-      "alignement": "",
-      "interligne": 100
-    },
-    "textes.signature.nom": {
-      "x": 2.9,
-      "y": -19,
-      "alignement": "",
-      "interligne": 100
-    },
-    "textes.signature.formule": {
-      "x": 0,
-      "y": -129,
-      "alignement": "",
-      "interligne": 100
-    },
     "textes.agenda.titre": {
       "x": 0,
       "y": 0,
-      "alignement": "",
-      "interligne": 100
-    },
-    "logo.signature": {
-      "x": -5,
-      "y": -151,
       "alignement": "",
       "interligne": 100
     }
@@ -644,24 +620,6 @@
     "textes.agenda.outlook": {
       "x": -173,
       "y": 144,
-      "alignement": "",
-      "interligne": 100
-    },
-    "logo.signature": {
-      "x": 0,
-      "y": -72,
-      "alignement": "",
-      "interligne": 100
-    },
-    "textes.signature.nom": {
-      "x": 0,
-      "y": 300,
-      "alignement": "",
-      "interligne": 100
-    },
-    "textes.signature.formule": {
-      "x": 0,
-      "y": 116,
       "alignement": "",
       "interligne": 100
     }
@@ -712,6 +670,11 @@ body{ margin:0; overflow-x:clip; background:#F5F1E9; color:#12161F; -webkit-font
 .site{ position:relative; }
 [data-bloc]{ font-size:calc(var(--text-base) * var(--k)); --lh:1.6; line-height:calc(var(--lh) * var(--lhk)); }
 .site [data-t]{ white-space:pre-line; position:relative; line-height:calc(var(--lh, 1.6) * var(--lhk)); }
+.site [data-t] a.courriel{ color:inherit; text-decoration:underline; text-decoration-color:var(--color-accent); text-underline-offset:.15em; text-decoration-thickness:1px; }
+.site [data-t] a.courriel:hover{ color:var(--color-accent); }
+/* hors atelier, une zone de texte vide ne prend pas de place */
+.site:not(.mode-edition) [data-t]:empty{ display:none; }
+.mode-edition [data-t]:empty{ min-height:1em; }
 [data-bloc]{ position:relative; }
 .ouverture.centre .accroche, .ouverture.centre .reservation p, .ouverture.centre .agenda p, .ouverture.centre .signature .ps, .ouverture.centre .mentions p{ margin-inline:auto; }
 .site .cta[data-t]{ white-space:pre-line; text-align:center; }
@@ -1417,7 +1380,14 @@ section{ max-width:var(--measure); padding-block:var(--space-2xl) var(--space-xl
     document.body.style.background = c.fond;
   }
 
-  function rendreTextes(){ $$('[data-t]', site).forEach(n => { if (n.dataset.image) return; n.textContent = lire(n.dataset.t) ?? ''; }); }
+  const RE_COURRIEL = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/;
+  function echapper(s){ return String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c])); }
+  function poserTexte(n, t){
+    t = t ?? '';
+    if (!atelierOuvert && n.tagName !== 'A' && RE_COURRIEL.test(t)) n.innerHTML = echapper(t).replace(new RegExp(RE_COURRIEL.source, 'g'), m => '<a class="courriel" href="mailto:' + m + '">' + m + '</a>');
+    else n.textContent = t;
+  }
+  function rendreTextes(){ $$('[data-t]', site).forEach(n => { if (n.dataset.image) return; poserTexte(n, lire(n.dataset.t)); }); }
 
   const compact = (d) => (d || '').replace(/[-:]/g, '').slice(0, 15).padEnd(15, '0');
   function lienAgenda(type){
@@ -1490,6 +1460,7 @@ section{ max-width:var(--measure); padding-block:var(--space-2xl) var(--space-xl
       });
     });
     if (atelierOuvert) activerEdition();
+    rendreTextes();
     rendreZones();
     rendreLiensPied();
   }
@@ -1921,8 +1892,9 @@ section{ max-width:var(--measure); padding-block:var(--space-2xl) var(--space-xl
   /* ---------- Édition en place ---------- */
   function activerEdition(){
     $$('[data-t]', site).forEach(n => {
-      if (n.dataset.editable || n.dataset.image) return; n.dataset.editable = '1';
+      if (n.dataset.image) return;
       n.setAttribute('contenteditable', 'plaintext-only'); n.setAttribute('spellcheck', 'false');
+      if (n.dataset.editable) return; n.dataset.editable = '1';
       n.addEventListener('input', () => { const t = (n.innerText || '').replace(/\r/g, '').replace(/\n$/, ''); ecrire(n.dataset.t, t); $$('[data-t="' + n.dataset.t + '"]', site).forEach(m => { if (m !== n) m.textContent = t; }); marquer(); });
       n.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') { ev.preventDefault(); document.execCommand('insertText', false, '\n'); } if (ev.key === 'Escape') n.blur(); });
       n.addEventListener('paste', (ev) => { ev.preventDefault(); document.execCommand('insertText', false, (ev.clipboardData || window.clipboardData).getData('text').replace(/[ \t]+/g, ' ')); });
@@ -2123,8 +2095,8 @@ section{ max-width:var(--measure); padding-block:var(--space-2xl) var(--space-xl
   function basculerAtelier(ouvert){
     atelierOuvert = ouvert; app.classList.toggle('mode-atelier', ouvert); site.classList.toggle('mode-edition', ouvert);
     $('#bouton-atelier').classList.toggle('visible', !ouvert && peutOuvrir);
-    if (ouvert) { app.classList.remove('mode-tel'); const bv = $('#bouton-vue'); if (bv) bv.classList.remove('visible'); activerEdition(); poserPoignees(); remplirChoixZones(); requestAnimationFrame(ajusterScene); }
-    else { $$('[data-t]', site).forEach(n => n.blur()); zoneSurvol = null; placerOutilZone(); $$('.repere', site).forEach(r => r.remove()); vueSansAtelier = vueCourante; appliquerModeTel(); }
+    if (ouvert) { app.classList.remove('mode-tel'); const bv = $('#bouton-vue'); if (bv) bv.classList.remove('visible'); rendreTextes(); activerEdition(); poserPoignees(); remplirChoixZones(); requestAnimationFrame(ajusterScene); }
+    else { $$('[data-t]', site).forEach(n => { n.blur(); n.removeAttribute('contenteditable'); }); rendreTextes(); zoneSurvol = null; placerOutilZone(); $$('.repere', site).forEach(r => r.remove()); vueSansAtelier = vueCourante; appliquerModeTel(); }
   }
 
   /* ---------- Téléchargement / publication ---------- */
