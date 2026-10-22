@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0046)file:///C:/Users/janis/Downloads/index_12.html -->
+<!-- saved from url=(0046)file:///C:/Users/janis/Downloads/index_14.html -->
 <html lang="fr" data-theme="dark" style="color-scheme: dark;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -26,7 +26,7 @@
 <!-- ÉTAT DE LA PAGE : textes, couleurs, polices, logo, mise en page. Modifié par l'atelier ; peut aussi s'éditer à la main. -->
 <script id="etat" type="application/json">{
   "version": 1,
-  "modif": 1792701869022,
+  "modif": 1792705848920,
   "mode": "site",
   "liens": {
     "billetterie": "https://www.billetweb.fr/soiree-hen-sis",
@@ -119,7 +119,7 @@
       "salutation": "Chers amis,",
       "paragraphes": [
         "\nLe jeudi 3 décembre 2026, l'établissement \n<i><a href=\"https://www.google.fr/maps/place/Les+Petits+Crus+Lyon/@45.7537292,4.8278717,170a,75y,77.85h,89.75t/data=!3m7!1e1!3m5!1sioMlI6Cuw8t0OCxhNcvOww!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0.24929601427444936%26panoid%3DioMlI6Cuw8t0OCxhNcvOww%26yaw%3D77.84593266451817!7i16384!8i8192!4m14!1m7!3m6!1s0x47f4eb5682a0c60f:0x668b3681843a42e6!2sLes+Petits+Crus+Lyon!8m2!3d45.753763!4d4.8280741!16s%2Fg%2F11vs4q6y7w!3m5!1s0x47f4eb5682a0c60f:0x668b3681843a42e6!8m2!3d45.753763!4d4.8280741!16s%2Fg%2F11vs4q6y7w?entry=ttu&amp;g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D\" target=\"_blank\" rel=\"noopener\">Les Petits <u>Crus<\/u><\/a><\/i>&nbsp;ouvre ses portes à un cercle restreint.\n\nSi vous lisez ce message, c'est que vous faites partie des personnes dont la présence sera appréciée. \n\nEn cette occasion unique et spéciale, vous êtes conviés à profiter d'une soirée dégustation, vin-charcuterie-fromage.",
-        "\nAu sein de cette soirée, vous trouverez un programme conçu sur mesure. Cela, dans l'objectif de créer des affinités professionnelles et amicales.\n\nChaque réservation en ligne est nominative et les places sont limitées.\n\nA cet effet, nous vous encourageons à prendre vos places maintenant pour garantir votre participation.",
+        "\nAu sein de cette soirée, vous trouverez un programme conçu sur mesure. Cela, dans l'objectif de créer des affinités professionnelles et amicales.\n\nChaque réservation se fait en ligne et est nominative. Les places sont limitées.\n\nA cet effet, nous vous encourageons à prendre vos places maintenant pour garantir votre participation.",
         "\nD'ici notre rencontre du jeudi 3 décembre, portez-vous bien.\n\nLe meilleur reste à venir.\n\nAvec notre affection la plus sincère,\nL'équipe Hénōsis"
       ]
     },
@@ -138,12 +138,12 @@
         },
         {
           "label": "Tarif",
-          "valeur": "45€ par personne",
+          "valeur": "45 € par personne",
           "note": "Dégustation charcuteries &amp; fromages MOF à discrétion · ½ bouteille de vin par personne&nbsp;"
         },
         {
           "label": "Tenue",
-          "valeur": "Professionnelle décontractée",
+          "valeur": "Business casual (Professionnelle décontractée)",
           "note": ""
         },
         {
@@ -825,8 +825,9 @@ section{ max-width:var(--measure); padding-block:var(--space-2xl) var(--space-xl
 .deroule .h{ font-family:var(--font-display); font-weight:500; font-size:calc(var(--text-md) * var(--k)); --lh:1; line-height:calc(var(--lh) * var(--lhk)); color:var(--t-accent-text); font-variant-numeric:tabular-nums; white-space:nowrap; }
 .reservation p{ max-width:46ch; }
 .contact{ margin-top:calc(var(--space-lg) * var(--gk)); color:var(--t-muted); }
-.contact a{ color:var(--t-accent-text); text-decoration:none; border-bottom:1px solid var(--t-rule); }
-.contact a:hover{ border-bottom-color:currentColor; }
+.contact a{ color:var(--t-accent-text); text-decoration:underline; text-decoration-color:var(--color-accent); text-underline-offset:.15em; text-decoration-thickness:1px; cursor:pointer; }
+.contact a:hover{ color:var(--color-accent); }
+.a-toast{ position:fixed; left:50%; bottom:24px; transform:translateX(-50%); z-index:600; max-width:min(90vw, 36rem); font:14px/1.4 var(--a-font); color:#F1ECE2; background:#1B1917; border:1px solid rgba(255,255,255,.25); border-radius:8px; padding:10px 14px; box-shadow:0 8px 28px rgba(0,0,0,.4); text-align:center; }
 
 /* ---- Barre de réservation (téléphone) ---- */
 .barre{
@@ -1267,7 +1268,7 @@ Si vous lisez ce message, c'est que vous faites partie des personnes dont la pr�
 En cette occasion unique et spéciale, vous êtes conviés à profiter d'une soirée dégustation, vin-charcuterie-fromage.</p><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button></div><div class="item"><p data-t="textes.lettre.paragraphes.1">
 Au sein de cette soirée, vous trouverez un programme conçu sur mesure. Cela, dans l'objectif de créer des affinités professionnelles et amicales.
 
-Chaque réservation en ligne est nominative et les places sont limitées.
+Chaque réservation se fait en ligne et est nominative. Les places sont limitées.
 
 A cet effet, nous vous encourageons à prendre vos places maintenant pour garantir votre participation.</p><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button></div><div class="item"><p data-t="textes.lettre.paragraphes.2">
 D'ici notre rencontre du jeudi 3 décembre, portez-vous bien.
@@ -1279,7 +1280,7 @@ L'équipe Hénōsis</p><button class="a-sup" type="button" title="Retirer" aria-
                 <button type="button" class="a-ajout" data-ajout="textes.lettre.paragraphes">+ Ajouter un paragraphe</button>
               </section><section class="fiche" data-bloc="fiche" style="top: -33px; margin-bottom: -22px; --k: 1; --lhk: 1; --gk: 0.75;">
                 <h2 data-t="textes.fiche.titre">La soirée</h2>
-                <dl data-liste="textes.fiche.lignes"><div class="ligne"><dt data-t="textes.fiche.lignes.0.label">Date</dt><dd><span data-t="textes.fiche.lignes.0.valeur">Jeudi 3 décembre 2026</span> <span class="note" data-t="textes.fiche.lignes.0.note">accueil dès 19&nbsp;h&nbsp;00</span></dd><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button></div><div class="ligne"><dt data-t="textes.fiche.lignes.1.label">Lieu</dt><dd><span data-t="textes.fiche.lignes.1.valeur">Les Petits Crus</span> <span class="note" data-t="textes.fiche.lignes.1.note">3 rue des Remparts d'Ainay, Lyon 2ᵉ</span></dd><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button></div><div class="ligne"><dt data-t="textes.fiche.lignes.2.label">Tarif</dt><dd><span data-t="textes.fiche.lignes.2.valeur">45€ par personne</span> <span class="note" data-t="textes.fiche.lignes.2.note">Dégustation charcuteries &amp; fromages MOF à discrétion · ½ bouteille de vin par personne&nbsp;</span></dd><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button></div><div class="ligne"><dt data-t="textes.fiche.lignes.3.label">Tenue</dt><dd><span data-t="textes.fiche.lignes.3.valeur">Professionnelle décontractée</span> <span class="note" data-t="textes.fiche.lignes.3.note"></span></dd><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button></div><div class="ligne"><dt data-t="textes.fiche.lignes.4.label">Réservation</dt><dd><span data-t="textes.fiche.lignes.4.valeur">En ligne</span> <span class="note" data-t="textes.fiche.lignes.4.note">confirmation par e-mail</span></dd><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button></div></dl>
+                <dl data-liste="textes.fiche.lignes"><div class="ligne"><dt data-t="textes.fiche.lignes.0.label">Date</dt><dd><span data-t="textes.fiche.lignes.0.valeur">Jeudi 3 décembre 2026</span> <span class="note" data-t="textes.fiche.lignes.0.note">accueil dès 19&nbsp;h&nbsp;00</span></dd><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button></div><div class="ligne"><dt data-t="textes.fiche.lignes.1.label">Lieu</dt><dd><span data-t="textes.fiche.lignes.1.valeur">Les Petits Crus</span> <span class="note" data-t="textes.fiche.lignes.1.note">3 rue des Remparts d'Ainay, Lyon 2ᵉ</span></dd><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button></div><div class="ligne"><dt data-t="textes.fiche.lignes.2.label">Tarif</dt><dd><span data-t="textes.fiche.lignes.2.valeur">45 € par personne</span> <span class="note" data-t="textes.fiche.lignes.2.note">Dégustation charcuteries &amp; fromages MOF à discrétion · ½ bouteille de vin par personne&nbsp;</span></dd><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button></div><div class="ligne"><dt data-t="textes.fiche.lignes.3.label">Tenue</dt><dd><span data-t="textes.fiche.lignes.3.valeur">Business casual (Professionnelle décontractée)</span> <span class="note" data-t="textes.fiche.lignes.3.note"></span></dd><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button></div><div class="ligne"><dt data-t="textes.fiche.lignes.4.label">Réservation</dt><dd><span data-t="textes.fiche.lignes.4.valeur">En ligne</span> <span class="note" data-t="textes.fiche.lignes.4.note">confirmation par e-mail</span></dd><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button></div></dl>
                 <button type="button" class="a-ajout" data-ajout="textes.fiche.lignes">+ Ajouter une ligne</button>
               </section><section class="deroule" data-bloc="deroule" style="top: -51px; margin-bottom: -64px; --k: 1; --lhk: 1; --gk: 1;">
                 <h2 data-t="textes.deroule.titre">Le déroulé</h2>
@@ -1291,7 +1292,7 @@ L'équipe Hénōsis</p><button class="a-sup" type="button" title="Retirer" aria-
                 <div class="boutons">
                   <a class="cta" data-agenda="google" data-t="textes.agenda.google" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Soir%C3%A9e%20H%C3%A9n%C5%8Dsis%20-%20Les%20Petits%20Crus&amp;dates=20261203T190000/20261204T010000&amp;ctz=Europe%2FParis&amp;location=Les%20Petits%20Crus%2C%203%20rue%20des%20Remparts%20d%27Ainay%2C%2069002%20Lyon&amp;details=Soir%C3%A9e%20H%C3%A9nosis%20%0A%0AD%C3%A9gustation%20de%20charcuteries%20et%20de%20fromages%20%C3%A0%20discr%C3%A9tion%2C%20s%C3%A9lectionn%C3%A9s%20aupr%C3%A8s%20d%E2%80%99un%20Meilleur%20Ouvrier%20de%20France%2C%20accompagn%C3%A9e%20d%E2%80%99une%20demi-bouteille%20de%20vin%20par%20personne.%0A%0ATenue%20professionnelle%20d%C3%A9contract%C3%A9e.%0Ahttps%3A%2F%2Fwww.billetweb.fr%2Fsoiree-hen-sis%3Futm_source%3Dcarton%2520d%27invitation%26utm_medium%3Dqr%26utm_campaign%3Dsoiree" target="_blank" rel="noopener">Google Agenda</a>
                   <a class="cta" data-agenda="outlook" data-t="textes.agenda.outlook" href="https://outlook.office.com/calendar/0/deeplink/compose?path=%2Fcalendar%2Faction%2Fcompose&amp;rru=addevent&amp;subject=Soir%C3%A9e%20H%C3%A9n%C5%8Dsis%20-%20Les%20Petits%20Crus&amp;startdt=2026-12-03T19%3A00%3A00&amp;enddt=2026-12-04T01%3A00%3A00&amp;location=Les%20Petits%20Crus%2C%203%20rue%20des%20Remparts%20d%27Ainay%2C%2069002%20Lyon&amp;body=Soir%C3%A9e%20H%C3%A9nosis%20%0A%0AD%C3%A9gustation%20de%20charcuteries%20et%20de%20fromages%20%C3%A0%20discr%C3%A9tion%2C%20s%C3%A9lectionn%C3%A9s%20aupr%C3%A8s%20d%E2%80%99un%20Meilleur%20Ouvrier%20de%20France%2C%20accompagn%C3%A9e%20d%E2%80%99une%20demi-bouteille%20de%20vin%20par%20personne.%0A%0ATenue%20professionnelle%20d%C3%A9contract%C3%A9e.%0Ahttps%3A%2F%2Fwww.billetweb.fr%2Fsoiree-hen-sis%3Futm_source%3Dcarton%2520d%27invitation%26utm_medium%3Dqr%26utm_campaign%3Dsoiree" target="_blank" rel="noopener" style="left: -174px; top: 116px;">Outlook</a>
-                  <a class="cta" data-agenda="ics" data-t="textes.agenda.ics" href="data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FHenosis%2F%2FPage%20vitrine%2F%2FFR%0D%0ACALSCALE%3AGREGORIAN%0D%0AMETHOD%3APUBLISH%0D%0ABEGIN%3AVEVENT%0D%0AUID%3A20261203T190000%40club-henosis.fr%0D%0ADTSTAMP%3A20261022T205056Z%0D%0ADTSTART%3BTZID%3DEurope%2FParis%3A20261203T190000%0D%0ADTEND%3BTZID%3DEurope%2FParis%3A20261204T010000%0D%0ASUMMARY%3ASoir%C3%A9e%20H%C3%A9n%C5%8Dsis%20-%20Les%20Petits%20Crus%0D%0ALOCATION%3ALes%20Petits%20Crus%5C%2C%203%20rue%20des%20Remparts%20d'Ainay%5C%2C%2069002%20Lyon%0D%0ADESCRIPTION%3ASoir%C3%A9e%20H%C3%A9nosis%20%5Cn%5CnD%C3%A9gustation%20de%20charcuteries%20et%20de%20fromages%20%C3%A0%20discr%C3%A9tion%5C%2C%20s%C3%A9lectionn%C3%A9s%20aupr%C3%A8s%20d%E2%80%99un%20Meilleur%20Ouvrier%20de%20France%5C%2C%20accompagn%C3%A9e%20d%E2%80%99une%20demi-bouteille%20de%20vin%20par%20personne.%5Cn%5CnTenue%20professionnelle%20d%C3%A9contract%C3%A9e.%5Cnhttps%3A%2F%2Fwww.billetweb.fr%2Fsoiree-hen-sis%0D%0AURL%3Ahttps%3A%2F%2Fclub-henosis.fr%2F%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR" download="soiree-henosis.ics" data-ics-pret="1" style="top: -14px;">Apple et autres (.ics)</a>
+                  <a class="cta" data-agenda="ics" data-t="textes.agenda.ics" href="data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FHenosis%2F%2FPage%20vitrine%2F%2FFR%0D%0ACALSCALE%3AGREGORIAN%0D%0AMETHOD%3APUBLISH%0D%0ABEGIN%3AVEVENT%0D%0AUID%3A20261203T190000%40club-henosis.fr%0D%0ADTSTAMP%3A20261022T215954Z%0D%0ADTSTART%3BTZID%3DEurope%2FParis%3A20261203T190000%0D%0ADTEND%3BTZID%3DEurope%2FParis%3A20261204T010000%0D%0ASUMMARY%3ASoir%C3%A9e%20H%C3%A9n%C5%8Dsis%20-%20Les%20Petits%20Crus%0D%0ALOCATION%3ALes%20Petits%20Crus%5C%2C%203%20rue%20des%20Remparts%20d'Ainay%5C%2C%2069002%20Lyon%0D%0ADESCRIPTION%3ASoir%C3%A9e%20H%C3%A9nosis%20%5Cn%5CnD%C3%A9gustation%20de%20charcuteries%20et%20de%20fromages%20%C3%A0%20discr%C3%A9tion%5C%2C%20s%C3%A9lectionn%C3%A9s%20aupr%C3%A8s%20d%E2%80%99un%20Meilleur%20Ouvrier%20de%20France%5C%2C%20accompagn%C3%A9e%20d%E2%80%99une%20demi-bouteille%20de%20vin%20par%20personne.%5Cn%5CnTenue%20professionnelle%20d%C3%A9contract%C3%A9e.%5Cnhttps%3A%2F%2Fwww.billetweb.fr%2Fsoiree-hen-sis%0D%0AURL%3Ahttps%3A%2F%2Fclub-henosis.fr%2F%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR" download="soiree-henosis.ics" data-ics-pret="1" style="top: -14px;">Apple et autres (.ics)</a>
                 </div>
               </section><section class="reservation" data-bloc="reservation" id="reserver" style="left: 0.9%; top: -59px; --k: 1; --lhk: 1; --gk: 1;">
                 <h2 data-t="textes.reservation.titre">Réserver votre place</h2>
@@ -1310,7 +1311,7 @@ L'équipe Hénōsis</p>
                   <span data-t="textes.signature.droits">
 
 Hénōsis, Lyon, 2026</span>
-                  <nav data-liste="textes.signature.liens" aria-label="Liens"><a data-t="textes.signature.liens.0.texte" href="file:///C:/Users/janis/Downloads/index_12.html#mentions">Mentions légales</a><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button><a data-t="textes.signature.liens.1.texte" href="file:///C:/Users/janis/Downloads/index_12.html#">Instagram</a><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button><a data-t="textes.signature.liens.2.texte" href="file:///C:/Users/janis/Downloads/index_12.html#">Partenaires</a><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button><a data-t="textes.signature.liens.3.texte" href="file:///C:/Users/janis/Downloads/index_12.html#">Anciens événements</a><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button></nav>
+                  <nav data-liste="textes.signature.liens" aria-label="Liens"><a data-t="textes.signature.liens.0.texte" href="file:///C:/Users/janis/Downloads/index_14.html#mentions">Mentions légales</a><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button><a data-t="textes.signature.liens.1.texte" href="file:///C:/Users/janis/Downloads/index_14.html#">Instagram</a><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button><a data-t="textes.signature.liens.2.texte" href="file:///C:/Users/janis/Downloads/index_14.html#">Partenaires</a><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button><a data-t="textes.signature.liens.3.texte" href="file:///C:/Users/janis/Downloads/index_14.html#">Anciens événements</a><button class="a-sup" type="button" title="Retirer" aria-label="Retirer">×</button></nav>
                   <button type="button" class="a-ajout" data-ajout="textes.signature.liens">+ Lien</button>
                 </div>
               </div>
@@ -2122,7 +2123,23 @@ Mentions légales</summary>
       });
     });
   }
-  site.addEventListener('click', (ev) => { if (!atelierOuvert) return; const a = ev.target.closest('a'); if (a) ev.preventDefault(); }, true);
+  /* Liens e-mail : sur le site en ligne, le navigateur ouvre la messagerie ; dans le cadre claude.ai (où une navigation ferait disparaître la page), on l'ouvre dans un nouvel onglet ou on affiche l'adresse */
+  const DANS_UN_CADRE = (() => { try { return window.self !== window.top; } catch (e) { return true; } })();
+  let toastMinuterie = null;
+  function toast(texte){ try { let t = document.getElementById('a-toast'); if (!t) { t = el('div', 'a-toast'); t.id = 'a-toast'; document.body.appendChild(t); } t.textContent = texte; t.style.display = 'block'; clearTimeout(toastMinuterie); toastMinuterie = setTimeout(() => { t.style.display = 'none'; }, 4000); } catch (e) {} }
+  site.addEventListener('click', (ev) => {
+    const a = ev.target.closest('a'); if (!a) return;
+    const href = a.getAttribute('href') || '';
+    if (/^mailto:/i.test(href)) {
+      if (!DANS_UN_CADRE) return; /* page en ligne ou fichier ouvert directement : comportement normal du navigateur */
+      ev.preventDefault(); ev.stopPropagation();
+      const adresse = href.replace(/^mailto:/i, '').split('?')[0];
+      let ouvert = null; try { ouvert = window.open(href, '_blank', 'noopener'); } catch (e) { ouvert = null; }
+      if (!ouvert) { let copie = null; try { if (navigator.clipboard && navigator.clipboard.writeText) copie = navigator.clipboard.writeText(adresse); } catch (e) { copie = null; } if (copie && copie.then) copie.then(() => toast('Sur la page en ligne, ce lien ouvre la messagerie du visiteur. Adresse copiée : ' + adresse), () => toast('Sur la page en ligne, ce lien ouvre la messagerie du visiteur : ' + adresse)); else toast('Sur la page en ligne, ce lien ouvre la messagerie du visiteur : ' + adresse); }
+      return;
+    }
+    if (atelierOuvert) ev.preventDefault();
+  }, true);
 
   /* Glisser le logo (position libre) */
   (function(){
